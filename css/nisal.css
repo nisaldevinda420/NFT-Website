@@ -5,13 +5,13 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    background-color: #212121;
+    /* background-color: #212121; */
 }
 
 nav{
     height: 100px;
     width: 100vw;
-    background-color: transparent;
+    background-color: #212121;
     display: flex;
 }
 
@@ -87,10 +87,15 @@ nav{
     border-bottom: none;
 }
 
-section{
+.wrapper{
     width: 80vw;
     margin-left: 10vw;
     /* background-color: aqua; */
+}
+
+.black-sec{
+    background-color: #212121;
+    width: 100vw;
 }
 
 .d-flex{
