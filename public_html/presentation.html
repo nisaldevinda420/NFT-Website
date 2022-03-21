@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation Page</title>
+    <title>Alola | Welcome!</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 <body>
-    <div class="wrapper">
-        <h1>This is the Landing Page</h1>
-        <p>This website is still under development</p>
-        <hr><br>
-        <b>Team Members</b><br>
-        <ul>
-            <li>Nisal Rajapakse</li>
-            <li>Pasath Bandara</li>
-            <li>Sachith Wickramasekara</li>
-            <li>Rajani Sooriyaarachchi</li>
-        </ul>
-    </div>
+    <section class="fullscreen-center black-bg">
+        <div id="welcome-section">
+            <center>
+                <img src="../assets/images/nav-logo.png" alt="">
+                <p>Alola is an NFT (Non-Fungible Token) based web project created by a team of four undergraduates for educational purposes.</p>
+                <h1 id="welcome-msg">WELCOME!</h1>
+                <hr>
+                <h2>OUR TEAM</h2>
+                <p>Nisal Rajapakse </p>
+                <p>Pasath Bandara</p>
+                <p>Sachith Wicramasekara</p>
+                <p>Rajani Sooriyaarachchi</p>
+            </center>
+        </div>
+        <div id="loader">
+            <p class="redirect-text">Redirecting to main page</p>
+            <div id="loader-wrap">
+                <div class="lds-dual-ring"></div>
+            </div>
+        </div>
+        
+            
+        </div>
+    </section>
+    
+    <!--JavaScript code to redirect to homepage-->
+    <script>
+        setTimeout(function(){
+        window.location.href = "index.html";
+        }, 4000);
+    </script>
 </body>
 </html>

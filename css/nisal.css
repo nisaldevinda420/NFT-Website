@@ -45,9 +45,29 @@ nav{
     margin-top: 3.75%;
 }
 
-.nav-link{
+.nav-link {
     display: inline-block;
     margin: 0 25px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+
+}
+
+.nav-active{
+    display: inline-block;
+    margin: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-active a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f2f1f1;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #7F055F;
+
 }
 
 .nav-link a{
@@ -55,22 +75,28 @@ nav{
     font-weight: 700;
     color: #f2f1f1;
 }
-
-.nav-link a:hover{
-    font-weight: 700;
-    color: #f2f1f1;
-    border-bottom: 2px solid #f2f1f1;
-    padding-bottom: 5px;
+  
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f1f1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-logo{
     height: 50%;
     margin-top: 10%;
-}
-
-.nav-active{
-    border-bottom: 2px solid #7F055F;
-    padding-bottom: 5px;
 }
 
 .nav-btn{
@@ -96,6 +122,7 @@ nav{
 .black-sec{
     background-color: #212121;
     width: 100vw;
+    height: 85vh;
 }
 
 .d-flex{
@@ -152,6 +179,7 @@ nav{
  
 .purple-line{
     border: 2px solid #7F055F;
+   
 }
 
 .hero-img{
@@ -159,4 +187,51 @@ nav{
     margin-top: 7.5%;
 }
 
+#shop-item-wrap{
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    width: 65%;
+    height: 2000px;
+    display: flex;
+    justify-content: center;
+}
 
+#checkout-area{
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 5%;
+    height: 500px;
+}
+
+.shop-row{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5% 0;
+}
+
+.shop-item{
+    width: 30%;
+    background-color: #393939;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.item-desc{
+    background-color: #7F055F;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+}
+
+.item-img-wrap{
+    width: 100%;
+    height: 200px;
+}
+
+.coin{
+    width: 16px;
+    color: #FFD700;
+}
