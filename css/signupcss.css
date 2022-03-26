@@ -113,128 +113,122 @@ nav{
     border-bottom: none;
 }
 
-.wrapper{
-    width: 80vw;
-    margin-left: 10vw;
-    /* background-color: aqua; */
-}
 
-.black-sec{
-    background-color: #212121;
-    width: 100vw;
-    height: 85vh;
-}
-
-.d-flex{
-    display: flex;
-}
-
-#hero-content, #hero-img{
-    width: 50%;
-}
-
-.fill-btn{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    font-weight: 700;
-    color: #f2f1f1;
-    background-color: #7F055F;
-    margin-right: 15px;
-}
-
-.fill-btn:hover{
-    background-color: #45062E;
-}
-
-.outline-btn{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #7F055F;
-    font-weight: 700;
-    color: #f2f1f1;
-    background-color: transparent;
-}
-
-.outline-btn:hover{
-    border: 2px solid #45062E;
-    background-color: #45062E;
+.signup{
+position: absolute;
+width: 80%;
+margin-left: 20%;
+z-index: 2;
+color: #000000;
+font-weight: bold;
 }
 
 .white-text{
-    color: #f2f1f1;
+color: #f2f1f1;
 }
 
-.main-heading{
-    font-size: 64px;
+.fname{
+width: 393px;
+height: 28px;
+left: 150px;
+top: 388px;
+background: #F2F1F1;
 }
 
-.para{
-    margin: 30px 0;
-}
- 
-.purple-line{
-    border: 2px solid #7F055F;
-   
-}
-
-.hero-img{
-    height: 85%;
-    margin-top: 7.5%;
-}
-<<<<<<< HEAD
-=======
-
-#shop-item-wrap{
-    background-color: #1c1c1c;
-    border-radius: 20px;
-    width: 65%;
-    height: 2000px;
-    display: flex;
-    justify-content: center;
+.email{
+width: 393px;
+height: 28px;
+left: 150px;
+top: 388px;
+background: #F2F1F1;
 }
 
-#checkout-area{
-    background-color: #1c1c1c;
-    border-radius: 20px;
-    width: 30%;
-    margin-left: 5%;
-    height: 500px;
+.pwd{
+width: 393px;
+height: 28px;
+left: 150px;
+top: 388px;
+background: #F2F1F1;
 }
 
-.shop-row{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 5% 0;
+
+.black-text{
+color: #000000;
 }
 
-.shop-item{
-    width: 30%;
-    background-color: #393939;
-    height: 250px;
-    border-radius: 20px;
+.fill-btn{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+padding: 20px 40px;
+border-radius: 20px;
+border: none;
+font-weight: 700;
+color: #f2f1f1;
+background-color: #7F055F;
+margin-right: 15px;
 }
 
-.item-desc{
-    background-color: #7F055F;
-    width: 100%;
-    height: 50px;
-    border-radius: 0 0 20px 20px;
-    display: flex;
+.fill-btn:hover{
+background-color: #45062E;
 }
 
-.item-img-wrap{
-    width: 100%;
-    height: 200px;
+.elmapo{
+position: absolute;
+background-image: url('../assets/images/login bg.jpg');
+mix-blend-mode: darken;
+opacity: 1;
+z-index: -3;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
 
-.coin{
-    width: 16px;
-    color: #FFD700;
+.form{
+position: absolute;
+width: 80%;
+margin-left: 20%;
+margin-top: 5%;
+z-index: 1;
+color: #000000;
+font-weight: bold;
 }
->>>>>>> 7d56f20f946924cdbb0fc58aa5840fdc7d36f5ec
+.white-text{
+color: #f2f1f1;
+}
+
+.sheet{
+text-align: center;
+position: relative;
+width: 80%;
+margin-left: 20%;
+font-weight: bold;
+font-size: larger;
+}
+
+.overlay{
+width:100vw;
+height: 100vh;
+background-color: #212121;
+opacity: 0.5;
+z-index: -2;
+}
+
+.main{
+margin-top: -101vh;
+
+}
+
+.buttons{
+margin-top: 25px;
+display: flex;
+}
+
+.container{
+    background-color:#f1f1f1;
+    padding: 16px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
