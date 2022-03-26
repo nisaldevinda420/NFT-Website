@@ -5,7 +5,7 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    /* background-color: #212121; */
+    background-color: #212121; 
 }
 
 nav{
@@ -233,8 +233,11 @@ nav{
     height: 200px;
 }
 
+<<<<<<< HEAD
 .coin{
     width: 16px;
     color: #FFD700;
 }
 >>>>>>> 7d56f20f946924cdbb0fc58aa5840fdc7d36f5ec
+=======
+>>>>>>> f51e8960bb33b259d36ceb179dfd80bfaaf26cf2
