@@ -627,3 +627,7 @@ nav{
     text-decoration: none;
     margin-right: 50px;
 }
+.coin{
+    width: 16px;
+    color: #FFD700;
+}

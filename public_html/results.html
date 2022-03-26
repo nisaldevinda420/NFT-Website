@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alola | Join the Club </title>
-    <link rel="stylesheet" href="../css/nisal.css">
+    <link rel="stylesheet" href="../css/signupcss.css">
+    <title>Alola | Results</title>
 </head>
-<body>
+<body class="signpic" style="background-color:powderblue;">
     <nav>
         <div class="nav-margin-left"></div>
         <div class="nav-left">
@@ -15,15 +15,26 @@
         </div>
         <div class="nav-right">
             <ul class="nav-links">
-                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-active"><a href="index.html">Home</a></li>
                 <li class="nav-link"><a href="shop.html">Marketplace</a></li>
                 <li class="nav-link"><a href="about.html">About</a></li>
                 <li class="nav-link"><a href="schema.html">Schema</a></li>
                 <li class="nav-link"><a href="giveaway.html">Giveaway</a></li>
-                <li class="nav-link nav-btn"><a href="sigin.html">Join the Club</a></li>
-            </ul>
+                <li class="nav-link nav-btn"><a href="club.html">Join the Club</a></li>
         </div>
         <div class="nav-margin-right"></div>
     </nav>
+    <div class="container">
+    <div id="results" class="sheet black-text"></div>
+    <a href="shop.html" style="text-align: center;"> Back to shop</a>
+    </div>
+    <script>
+        const resultList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => 
+        {
+            resultList.append(`Your ${name}: ${value}`)
+            resultList.append(document.createElement('br'))
+        })
+    </script>
 </body>
 </html>

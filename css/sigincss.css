@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /* background-color: #212121; */
+}
+
+nav{
+    height: 100px;
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+}
+
+.nav-margin-left{
+    height: 100%;
+    width: 10%;
+    /* background-color: red; */
+}
+
+.nav-left{
+    height: 100%;
+    width: 20%;
+    /* background-color: blue; */
+}
+
+.nav-margin-right{
+    height: 100%;
+    width: 10%;
+    /* background-color: green; */
+}
+
+.nav-right{
+    height: 100%;
+    width: 60%;
+    /* background-color: pink; */
+}
+
+.nav-links{
+    list-style-type: none;
+    float: right;
+    margin-top: 3.75%;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 25px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+
+}
+
+.nav-active{
+    display: inline-block;
+    margin: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-active a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f2f1f1;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #7F055F;
+
+}
+
+.nav-link a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f2f1f1;
+}
+  
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f1f1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-logo{
+    height: 50%;
+    margin-top: 10%;
+}
+
+.nav-btn{
+    background-color: #7F055F;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-btn:hover{
+    background-color: #45062E;
+}
+
+.nav-btn a:hover{
+    border-bottom: none;
+}
+
+
+.white-text{
+color: #f2f1f1;
+}
+
+.signup{
+position: absolute;
+width: 80%;
+margin-left: 20%;
+margin-top: 15%;
+z-index: 1;
+color: #000000;
+font-weight: bold;
+}
+
+.form{
+position: absolute;
+width: 80%;
+margin-left: 20%;
+margin-top: 15%;
+}
+
+.pwd{
+width: 393px;
+height: 28px;
+left: 150px;
+top: 388px;
+background: #F2F1F1;
+}
+
+.email{
+width: 393px;
+height: 28px;
+left: 150px;
+top: 388px;
+background: #F2F1F1;
+}
+
+
+.fill-btn{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+padding: 20px 40px;
+border-radius: 20px;
+border: none;
+font-weight: 700;
+color: #f2f1f1;
+background-color: #7F055F;
+margin-right: 15px;
+}
+
+.fill-btn:hover{
+background-color: #45062E;
+}
+
+.elmapo{
+position: absolute;
+background-image: url('../assets/images/elmapo.jpgelmapo.jpg');
+mix-blend-mode: darken;
+opacity: 1;
+z-index: -3;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.overlay{
+width:100vw;
+height: 100vh;
+background-color: #212121;
+opacity: 0.5;
+z-index: -2;
+}
+
+.main{
+margin-top: -108vh;
+
+}
+
+.signedin{
+    z-index: 1;
+    text-align: center;
+}
