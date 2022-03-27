@@ -98,6 +98,9 @@ body{
     height: 90%;
     margin-left: 60px;
 }
+.pokemon-name{
+    font-size: 20px;
+}
 
 #thumb1, #thumb1-desc, #thumb2, #thumb2-desc, #thumb3, #thumb3-desc, #thumb4, #thumb4-desc, #thumb5, #thumb5-desc, #thumb6, #thumb6-desc{
     display: none;
