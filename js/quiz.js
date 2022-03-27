@@ -49,13 +49,13 @@ function changecolor (){
     console.log(scoreint);
     console.log(typeof(scoreint));
     if (scoreint>=8){
-        bg.style.backgroundColor ='green';  
+        bg.style.backgroundColor ='#6cf365';  
     }
     else if(scoreint<8 && finalmark>=5){
-        bg.style.backgroundColor="yellow";  
+        bg.style.backgroundColor="#e6f853";  
     }
     else{
-        bg.style.backgroundColor="red";  
+        bg.style.backgroundColor="#f52481";  
     }
 
     
