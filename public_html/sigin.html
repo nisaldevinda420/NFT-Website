@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alola | Log In</title>
+
+    <link rel="stylesheet" href="../css/sigincss.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-margin-left"></div>
+        <div class="nav-left">
+            <a href="index.html"><img src="../assets/images/nav-logo.png" alt="" class="nav-logo"></a>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li class="nav-active"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="shop.html">Marketplace</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="schema.html">Schema</a></li>
+                <li class="nav-link"><a href="giveaway.html">Giveaway</a></li>
+                <li class="nav-link nav-btn"><a href="sigin.html">Join the Club</a></li>
+            </ul>
+        </div>
+        <div class="nav-margin-right"></div>
+    </nav>
+    <div class="overlay">
+
+    </div>
+    <div class="main">
+        <div class="signup">
+            <br></br>
+            <h1 class="white-text">Sign In</h1>
+            <p class="white-text redirect">
+                Don't have an account? &nbsp;<a href="signup.html" class="white-text" target="_blank">
+                    <b>Sign Up</b></a></p>
+        </div>
+        <br>
+        <div id="error"></div>
+        <form id="form" class="form" action="signedin.html" method="GET">
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <label for="email" class="white-text">Email:</label>
+            <br></br>
+            <input id="email" type="email" name="email" size="50px" class="email black-text">
+            <br></br>
+            <label for="pwd" class="white-text">Password:</label>
+            <br></br>
+            <input id="pwd" type="password" name="pwd" size="50px" class="pwd black-text">
+            <br></br>
+            <input type="radio" name="verify" id="verify black-text" class="verify white-text">
+            <label for="verify" class="verify white-text">Click to verify</label>
+            <br></br>
+            <button class="fill-btn">Log In</button>
+        </form>
+    </div>
+    <div>
+    </div>
+</body>
+
+</html>
