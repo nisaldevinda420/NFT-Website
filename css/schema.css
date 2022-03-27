@@ -30,91 +30,13 @@
         #myBtn:hover {
             background-color: #7F055F;
           }
-        img{
-            position: absolute;
-            width: 217px;
-            height: 62px;
-            left: 50px;
-            top: 19px;
-        }
-        nav{
-            height: 100px;
-            width: 100vw;
-            background-color: transparent;
-            display: flex;
-        }
-            
-        .nav-margin-left{
-            height: 100%;
-            width: 10%;
-            /* background-color: red; */
-        }
-            
-        .nav-left{
-            height: 100%;
-            width: 20%;
-            /* background-color: blue; */
-        }
-            
-        .nav-margin-right{
-            height: 100%;
-            width: 10%;
-            /* background-color: green; */
-        }
-            
-        .nav-right{
-            height: 100%;
-            width: 60%;
-            /* background-color: pink; */
-        }
-            
-        .nav-links{
-            list-style-type: none;
-            float: right;
-            margin-top: 3.75%;
-        }
-            
-        .nav-link{
-            display: inline-block;
-            margin: 0 25px;
-        }
-            
-        .nav-link a{
-            text-decoration: none;
-            font-weight: 700;
-            color: #f2f1f1;
-        }
-            
-        .nav-link a:hover{
-            font-weight: 700;
-            color: #f2f1f1;
-            border-bottom: 2px solid #f2f1f1;
-            padding-bottom: 5px;
-        }
-            
-        .nav-logo{
-            height: 50%;
+        #sitemap{
             margin-top: 10%;
-        }
-            
-        .nav-active{
-            border-bottom: 2px solid #7F055F;
-            padding-bottom: 5px;
-        }
-            
-        .nav-btn{
-            background-color: #7F055F;
-            padding: 10px 20px;
-            border-radius: 10px;
-        }
-            
-        .nav-btn:hover{
-            background-color: #45062E;
-        }
-            
-        .nav-btn a:hover{
-            border-bottom: none;
-        }
+          }
+     
+
+        
+        
     
         
         
