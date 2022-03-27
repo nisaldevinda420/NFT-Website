@@ -29,7 +29,91 @@
         <div class="nav-margin-right"></div>
     </nav>
 
-    <section class="signup white-text">
+    <section id="sign-up-sec">
+        <div class="main-section"></div>
+        <div class="overlay-section">
+            <div class="signup white-text">
+                <br></br>
+                <h1 class="sign-up-text">Sign Up</h1>
+                <p>
+                    Already have an account? &nbsp; <a href="sigin.html" class="white-text" target="_blank">
+                    Sign in</a></p>
+            </div>
+            <br>
+            <div class="main">
+                <div id="error"></div>
+                <form id="form" class="form white-text" action="results.html" method="GET">
+                    <br></br>
+                    <br></br>
+            
+                    <div>
+                    <label for="name"> Name <small><i>(Only Visible to You)</i></small></label>
+                    <br></br>
+                    <input type="text" id="name" name="Name " size="50px" class="fname f-input" placeholder="Your Name here">
+                    <br></br>
+                    </div>
+            
+                    <div>
+                    <label for="email">Email</label>
+                    <br></br>
+                    <input type="email" name="Email " id="email" size="50px" class="email f-input" placeholder="example@hotmail.com">
+                    <br></br>
+                    </div>
+            
+                    <div>
+                    <label for="fname">Username <small><i>(Only Visible to You)</i></small></label>
+                    <br></br>
+                    <input type="text" name="Username " id="fname" size="50px" class="fname f-input" placeholder="John Doe">
+                    <br></br>
+                    </div>
+            
+                    <div>
+                    <label for="date">Birthdate</label>
+                    <br></br>
+                    <input type="date" name="Date of Birth " id="date" min="2000" class="f-input">
+                    <br></br>
+                    </div>
+                    
+                    <div>
+                    <label for="pwd">Password</label>
+                    <br></br>
+                    <input type="password" name="Password " id="pwd" size="50px" class="pwd f-input" placeholder="*******">
+                    <br></br>
+                    </div>
+            
+                    <div>
+                    <label for="pwd">Confirm Password</label>
+                    <br></br>
+                    <input type="password" name="Password Confirmed " id="pwd" size="50px" class="pwd f-input" placeholder="*******">
+                    <br></br>
+                    </div>
+            
+                    <div>
+                    <label for="wallet">Wallet Key</label>
+                    <br></br>
+                    <textarea name="Wallet Key " id="pwd" class="pwd" placeholder="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141">
+                    </textarea>
+                    <br></br>
+                    </div>
+            
+                    
+                    <input type="radio" name="verify" id="verify" class="verify black-text">
+                    <label for="verify" class="verify">By clicking Sign Up, I hereby acknowledge that I agree to the Alola.com NFT Terms and Conditions and I've read the Privacy Notice.</label>
+                    <br></br>
+                    <input type="radio" name="verify1" id="verify" class="verify black-text">
+                    <label for="verify" class="verify white-text">I agree to receive email updates from Alola.</label>
+                    
+                    <div class="buttons">
+                    <div><button type="submit" class="fill-btn">Send</button></div>
+                    <br></br>
+                    <div><button type="reset" class="fill-btn">Edit</button></div>
+                    </div>
+                </form>
+            <div>
+        </div>
+    </section>
+
+    <!-- <section class="signup white-text">
         <br></br>
         <h3><b></b>Sign Up<br></br>
             Already have an account?<a href="sigin.html" class="white-text" target="_blank">
@@ -110,6 +194,6 @@
     <div>
         <img src="../assets/images/login bg.jpg" alt="" class="elmapo">
     </div>
-</div>
+</div> -->
 </body>
 </html>
