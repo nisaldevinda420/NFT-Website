@@ -125,6 +125,7 @@ font-weight: bold;
 
 .white-text{
 color: #f2f1f1;
+font-weight: 400;
 }
 
 .fname{
@@ -159,7 +160,7 @@ color: #000000;
 .fill-btn{
 font-family: 'Montserrat', sans-serif;
 font-size: 14px;
-padding: 20px 40px;
+padding: 15px 60px;
 border-radius: 20px;
 border: none;
 font-weight: 700;
@@ -213,10 +214,6 @@ opacity: 0.5;
 z-index: -2;
 }
 
-.main{
-margin-top: -101vh;
-
-}
 
 .buttons{
 margin-top: 25px;
@@ -232,3 +229,30 @@ display: flex;
     padding: 10px;
 
 }
+
+.main-section{
+    background-image: url(../assets/images/login\ bg.jpg);
+    height: 150vh;
+    width: 100vw;
+}
+
+.overlay-section{
+    background-color: #212121;
+    opacity: 0.9;
+    height: 150vh;
+    width: 100vw;
+    margin-top: -150vh;
+}
+
+.sign-up-text{
+    font-size: 28px !important;
+}
+
+.f-input, textarea{
+    height: 35px !important;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+
