@@ -122,7 +122,7 @@ color: #f2f1f1;
 position: absolute;
 width: 80%;
 margin-left: 20%;
-margin-top: 15%;
+margin-top: 2.5%;
 z-index: 1;
 color: #000000;
 font-weight: bold;
@@ -132,7 +132,13 @@ font-weight: bold;
 position: absolute;
 width: 80%;
 margin-left: 20%;
-margin-top: 15%;
+margin-top: 2.5%;
+}
+
+.black-text{
+    height: 40px !important;
+    border-radius: 10px;
+    border: none;
 }
 
 .pwd{
@@ -155,7 +161,7 @@ background: #F2F1F1;
 .fill-btn{
 font-family: 'Montserrat', sans-serif;
 font-size: 14px;
-padding: 20px 40px;
+padding: 15px 60px;
 border-radius: 20px;
 border: none;
 font-weight: 700;
@@ -181,18 +187,34 @@ background-size: cover;
 
 .overlay{
 width:100vw;
-height: 100vh;
+height: 85vh;
 background-color: #212121;
-opacity: 0.5;
+opacity: 0.9;
 z-index: -2;
 }
 
 .main{
-margin-top: -108vh;
-
+    width:100vw;
+    height: 85vh;
+    background-image: url(../assets/images/elmapo.jpg);
+    z-index: -3;
+    margin-top: -85vh;
 }
 
 .signedin{
     z-index: 1;
     text-align: center;
+}
+
+.redirect{
+    font-weight: 400 !important;
+}
+
+.after-login{
+    background-color: #1c1c1c;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f1f1;
 }

@@ -551,7 +551,7 @@ nav{
 
 .editor-container{
     height: 70vh;
-    width: 60vw;
+    width: 65vw;
     background-color: #1c1c1c;
     border-radius: 50px;
 }
@@ -559,7 +559,7 @@ nav{
 .editor-info{
     background-color: #393939;
     height: 100%;
-    width: 45%;
+    width: 50%;
     border-radius: 50px 0 0 50px;
     display: flex;
     align-items: center;
@@ -595,7 +595,7 @@ nav{
 }
 
 .editor-tasks{
-    width: 55%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
