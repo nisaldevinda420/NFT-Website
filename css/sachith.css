@@ -67,6 +67,7 @@ d-flex{
     position:absolute;
     transform:translate(135px,420px);
     cursor: pointer;
+    text-decoration: none;
 }
 
 a{

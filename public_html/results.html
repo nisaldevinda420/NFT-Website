@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/signupcss.css">
     <title>Alola | Results</title>
 </head>
-<body class="signpic" style="background-color:powderblue;">
+<body class="signpic" style="background-color:#c4389e;">
     <nav>
         <div class="nav-margin-left"></div>
         <div class="nav-left">
@@ -24,20 +24,29 @@
         </div>
         <div class="nav-margin-right"></div>
     </nav>
+    <form action="mailto:alolanft@gmail.com" method="post" enctype="text/plain">
+    <h1 style="text-align: center;"><span class="black-text">Your</span> <span class="black-text">Details</span></h1>
     <div class="container">
+        <br>
     <div id="results" class="sheet black-text"></div>
-    <a href="shop.html" style="text-align: center;"> Back to shop</a>
+    <div><button class="fill-btn" "><a href="mailto:alolanft@gmail.com" class=" mail_to white-text">Mail To</a></button></div> 
     </div>
+<<<<<<< HEAD
     <section id="page-editor-sec">
         <a href="editors/editor-pasath.html">View Page Editor</a>
     </section>
     <script src="../js/shop.js"></script>
     <script src="../js/main.js"></script>
+=======
+    </form>
+    
+>>>>>>> 0f0408c997a98e527c74cf93636bda86955f6da7
     <script>
         const resultList = document.getElementById('results')
         new URLSearchParams(window.location.search).forEach((value, name) => 
         {
             resultList.append(`Your ${name}: ${value}`)
+            resultList.append(document.createElement('br'))
             resultList.append(document.createElement('br'))
         })
     </script>
