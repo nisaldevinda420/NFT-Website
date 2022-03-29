@@ -30,8 +30,6 @@ function validateForm() {
     return false;
   }
 }
-
-
 </script>
 
 </head>
@@ -67,7 +65,7 @@ function validateForm() {
             </div>
             <br>
             <div class="main">
-                <form id="form" class="form white-text" action="results.html" onsubmit="return validateForm()" onclick="" method="GET">
+                <form id="form" class="form white-text" action="mailto:" onsubmit="return validateForm()" method="post">
                     <br>
                     <br>
 
@@ -75,7 +73,7 @@ function validateForm() {
                     <label for="title">Got a Question?</label>
                     <br>
                     <br>
-                    <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here" disabled>
+                    <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here">
                     <br>
                     <br>
                     <br>
@@ -208,6 +206,8 @@ function validateForm() {
                 </form>
             <div>
         </div>
+        <hr>  
     </section>
+
 </body>
 </html>
