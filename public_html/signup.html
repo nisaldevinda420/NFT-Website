@@ -8,8 +8,32 @@
     <title>Alola | Sign Up</title>
 
     <link rel="stylesheet" href="../css/signupcss.css">
-<script defer src="../js/script.js"></script>
+
+<script>
+function validateForm() {
+  let x = document.forms["form"]["name"].value;
+  let y = document.forms["form"]["email"].value;
+  let z = document.forms["form"]["pwd"].value;
+
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+
+  if (z == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+</script>
+
 </head>
+
 <body>
     <nav>
         <div class="nav-margin-left"></div>
@@ -41,8 +65,7 @@
             </div>
             <br>
             <div class="main">
-                <div id="error"></div>
-                <form id="form" class="form white-text" action="results.html" method="GET">
+                <form id="form" class="form white-text" action="results.html" onsubmit="return validateForm()" method="GET">
                     <br></br>
                     <br></br>
             
@@ -112,88 +135,5 @@
             <div>
         </div>
     </section>
-
-    <!-- <section class="signup white-text">
-        <br></br>
-        <h3><b></b>Sign Up<br></br>
-            Already have an account?<a href="sigin.html" class="white-text" target="_blank">
-            <em>Sign in</em></a></h3>
-    </section>
-    <div class="overlay">
-        a
-    </div>
-    <div class="main">
-    <div id="error"></div>
-    <form id="form" class="form white-text" action="results.html" method="GET">
-        <br></br>
-        <br></br>
-
-        <div>
-        <label for="name"> Name <small><i>(Only Visible to You)</i></small></label>
-        <br></br>
-        <input type="text" id="name" name="Name " size="50px" class="fname" placeholder="Your Name here">
-        <br></br>
-        </div>
-
-        <div>
-        <label for="email">Email</label>
-        <br></br>
-        <input type="email" name="Email " id="email" size="50px" class="email" placeholder="example@hotmail.com">
-        <br></br>
-        </div>
-
-        <div>
-        <label for="fname">Username <small><i>(Only Visible to You)</i></small></label>
-        <br></br>
-        <input type="text" name="Username " id="fname" size="50px" class="fname" placeholder="John Doe">
-        <br></br>
-        </div>
-
-        <div>
-        <label for="date">Birthdate</label>
-        <br></br>
-        <input type="date" name="Date of Birth " id="date" min="2000">
-        <br></br>
-        </div>
-        
-        <div>
-        <label for="pwd">Password</label>
-        <br></br>
-        <input type="password" name="Password " id="pwd" size="50px" class="pwd" placeholder="*******">
-        <br></br>
-        </div>
-
-        <div>
-        <label for="pwd">Confirm Password</label>
-        <br></br>
-        <input type="password" name="Password Confirmed " id="pwd" size="50px" class="pwd" placeholder="*******">
-        <br></br>
-        </div>
-
-        <div>
-        <label for="wallet">Wallet Key</label>
-        <br></br>
-        <textarea name="Wallet Key " id="pwd" class="pwd" placeholder="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141">
-        </textarea>
-        <br></br>
-        </div>
-
-        
-        <input type="radio" name="verify" id="verify" class="verify black-text">
-        <label for="verify" class="verify">By clicking Sign Up, I hereby acknowledge that I agree to the Alola.com NFT Terms and Conditions and I've read the Privacy Notice.</label>
-        <br></br>
-        <input type="radio" name="verify1" id="verify" class="verify black-text">
-        <label for="verify" class="verify white-text">I agree to receive email updates from Alola.</label>
-        
-        <div class="buttons">
-        <div><button type="submit" class="fill-btn">Sign Up</button></div>
-        <br></br>
-        <div><button type="reset" class="fill-btn">Reset</button></div>
-        </div>
-    </form>
-    <div>
-        <img src="../assets/images/login bg.jpg" alt="" class="elmapo">
-    </div>
-</div> -->
 </body>
 </html>
