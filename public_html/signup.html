@@ -68,6 +68,43 @@ function validateForm() {
                 <form id="form" class="form white-text" action="results.html" onsubmit="return validateForm()" method="GET">
                     <br>
                     <br>
+
+                    <div class="test">
+                        <label for="title">Got a Question?</label>
+                        <br>
+                        <br>
+                        <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here" disabled>
+                        <br>
+                        <br>
+                        <br>
+                       
+                        </div>
+
+                        <div class="test">
+                        <label for="questiondeets">Type your Question Here</label>
+                        <br>
+                        <br>
+                        <textarea name="Question Details" id="questiondeets" class="pwd" placeholder="Your Question Indepth Here">
+                        </textarea>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="desc">
+                            <h3>"<span class="purple-text">A highly-curated platform for creating,</span> collecting and trading unique NFTs"</h3>
+                            <br>
+                            <dt class="purple-text"><b>Drops</b></dt>
+                            <dd>Purchase NFTs that are directly sold by top Creators</dd>
+                            <br>
+                            <dt class="purple-text"><b>Marketplace</b></dt>
+                            <dd>Bid on and auction off rare digital collectibles</dd>
+                            <br>
+                            <dt class="purple-text"><b>Quizes</b></dt>
+                            <dd>Play a quiz to earn a chance to win your own NFT</dd>
+                            <br>
+                            <dt class="purple-text"><b>My Nfts</b></dt>
+                            <dd>A digital gallery to showcase your collection</dd>
+                        </div>
+                        </div>
             
                     <div>
                     <label for="name"> Name <small><i>(Only Visible to You)</i></small></label>
@@ -122,7 +159,24 @@ function validateForm() {
                     <br>
                     <br>
                     </div>
-            
+
+                    <div> 
+                    <p>Your Wallet Type</p>
+                    <input type="radio" id="metamask" name="walletname" value="metamask">
+                    <label for="metamask">MetaMask</label><br>
+                    <br>
+                
+                    <input type="radio" id="cb" name="walletname" value="cb">
+                    <label for="cb">CoinBase Wallet</label><br>
+                    <br>
+                    
+                    <input type="radio" id="wc" name="walletname" value="wc">
+                    <label for="wc">Wallet Connect</label>
+
+                    <br>
+                    <br>
+                    </div>
+
                     <div>
                     <label for="wallet">Wallet Key</label>
                     <br>
@@ -132,10 +186,9 @@ function validateForm() {
                     <br>
                     <br>
                     </div>
-            
-                    
+   
                     <input type="radio" name="verify Main" id="verify" class="verify black-text">
-                    <label for="verify" class="verify">By clicking Send, I hereby acknowledge that I agree to the Alola.com NFT Terms and Conditions and I've read the Privacy Notice.</label>
+                    <label for="verify" class="verify white-text">By clicking Send, I hereby acknowledge that I agree to the Alola.com NFT Terms and Conditions and I've read the Privacy Notice.</label>
                     <br>
                     <br>
                     <input type="radio" name="verify Secondary" id="verify1" class="verify black-text">
@@ -147,6 +200,7 @@ function validateForm() {
                     <br>
                     <div><button type="reset" class="fill-btn">Edit</button></div>
                     </div>
+                    
                 </form>
             <div>
         </div>
