@@ -198,7 +198,7 @@ color: #f2f1f1;
 }
 
 .sheet{
-text-align: center;
+text-align: justify;
 position: relative;
 width: 80%;
 margin-left: 20%;
@@ -225,8 +225,9 @@ background-color:#f1f1f1;
 padding: 16px;
 margin: auto;
 width: 50%;
-border: 3px solid green;
+border: 3px groove #212121;
 padding: 10px;
+text-align: justify;
 
 }
 
@@ -279,4 +280,10 @@ font-weight: 100;
 }
 .purple-text{
     color: #c4389e;
+}
+
+.mail_to{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: ; 
+    text-decoration: none;
 }
