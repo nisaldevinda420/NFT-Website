@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/signupcss.css">
     <title>Alola | Results</title>
 </head>
-<body class="signpic" style="background-color:powderblue;">
+<body class="signpic" style="background-color:#c4389e;">
     <nav>
         <div class="nav-margin-left"></div>
         <div class="nav-left">
@@ -24,15 +24,18 @@
         </div>
         <div class="nav-margin-right"></div>
     </nav>
+    <h1 style="text-align: center;"><span class="black-text">Your</span> <span class="black-text">Details</span></h1>
     <div class="container">
+        <br>
     <div id="results" class="sheet black-text"></div>
-    <a href="shop.html" style="text-align: center;"> Back to shop</a>
     </div>
+    
     <script>
         const resultList = document.getElementById('results')
         new URLSearchParams(window.location.search).forEach((value, name) => 
         {
             resultList.append(`Your ${name}: ${value}`)
+            resultList.append(document.createElement('br'))
             resultList.append(document.createElement('br'))
         })
     </script>

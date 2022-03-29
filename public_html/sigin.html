@@ -8,7 +8,22 @@
     <title>Alola | Log In</title>
 
     <link rel="stylesheet" href="../css/sigincss.css">
-    <script defer src="script.js"></script>
+    <script>
+    function validateForm() {
+        let y = document.forms["form"]["email"].value;
+        let z = document.forms["form"]["pwd"].value;
+
+        if (y == "") {
+        alert("Email must be filled out");
+        return false;
+        }
+
+        if (z == "") {
+        alert("Password must be filled out");
+        return false;
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -41,19 +56,19 @@
                     <b>Sign Up</b></a></p>
         </div>
         <br>
-        <div id="error"></div>
-        <form id="form" class="form" action="signedin.html" method="GET">
+        <form id="form" class="form" action="signedin.html" onsubmit="return validateForm()" method="GET">
             <br></br>
             <br></br>
             <br></br>
             <br></br>
+            
             <label for="email" class="white-text">Email:</label>
             <br></br>
-            <input id="email" type="email" name="email" size="50px" class="email black-text">
+            <input id="email" type="email" name="email" class="email black-text">
             <br></br>
             <label for="pwd" class="white-text">Password:</label>
             <br></br>
-            <input id="pwd" type="password" name="pwd" size="50px" class="pwd black-text">
+            <input id="pwd" type="password" name="pwd" class="pwd black-text">
             <br></br>
             <input type="radio" name="verify" id="verify black-text" class="verify white-text">
             <label for="verify" class="verify white-text">Click to verify</label>
