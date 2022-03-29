@@ -105,7 +105,7 @@ function checkout(){
     const invoiceObject = document.getElementById('invoice-content');
     invoiceObject.innerHTML = cartContents;
 
-    getDetails();
+    // getDetails();
     
     var invoiceDetails = document.getElementById('invoice')
     var visibility = invoiceDetails.style.visibility;
@@ -126,13 +126,43 @@ function removeItems(){
 function getDetails() {
     const customerName = document.querySelector('#customer-name').value;
     const customerEmail = document.querySelector('#customer-email').value;
+    const emailError = document.getElementById('error-email');
+    const nameError = document.getElementById('error-name');
+    const invoice = document.getElementById('invoice');
+
+    nameErrorMsg = "* Name is required";
+    emailErrorMsg = "* Email is required";
 
     console.log(customerName);
     console.log(customerEmail);
 
-    invoiceName = document.querySelector('#invoice-name');
-    invoiceName.textContent = customerName;
+    if (customerName == '' || customerEmail == ''){
+        window.alert('Please enter the required personal information.');
+        if (customerName == ''){
+            nameError.style.visibility = 'visible';
+            nameError.textContent = nameErrorMsg; 
+        }
+        else{
+            nameError.style.visibility = 'hidden'; 
+        }
+        if (customerEmail == ''){
+            emailError.style.visibility = 'visible';
+            emailError.textContent = emailErrorMsg;
+        }
+        else{
+            emailError.style.visibility = 'hidden'; 
+        }
+    }
+    else{
+        invoiceName = document.querySelector('#invoice-name');
+        invoiceName.textContent = customerName;
 
-    invoiceName = document.querySelector('#invoice-email');
-    invoiceName.textContent = customerEmail;
+        invoiceName = document.querySelector('#invoice-email');
+        invoiceName.textContent = customerEmail;
+
+        invoice.scrollIntoView();
+        checkout();
+    }
+
+    
   }

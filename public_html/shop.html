@@ -30,6 +30,7 @@
         </div>
         <div class="nav-margin-right"></div>
     </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <section class="">
         <center>
             <h1 class="main-heading white-text">Alola <span class="purple-text">Marketplace</span></h1>
@@ -212,7 +213,9 @@
                     <center><h3 class="purple-text">Personal Information</h3></center>
                     <br>
                     <input type="text" class="cart-details" id="customer-name" placeholder="Enter your Name">
+                    <div id="error-name"></div>
                     <input type="email" class="cart-details" id="customer-email" placeholder="Enter your Email Address">
+                    <div id="error-email"></div>
                     <center><h3 class="purple-text">Your Cart</h3></center>
                     <br>
                     <div id="cart-content">
@@ -276,7 +279,7 @@
                     </div>
                     <div id="reset-and-checkout">
                         <button class="outline-btn" id="reset-cart-button" onclick="removeItems()">Reset Cart</button>
-                        <a href="#invoice"><button class="fill-btn checkout-btn" onclick="checkout()">Checkout</button></a>
+                        <button class="fill-btn checkout-btn" onclick="getDetails()">Checkout</button>
                     </div>
                 </div>
             </div>
@@ -327,5 +330,6 @@
         <a href="editors/editor-nisal.html">View Page Editor</a>
     </section>
     <script src="../js/shop.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
