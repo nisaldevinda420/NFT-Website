@@ -10,30 +10,8 @@
     <link rel="stylesheet" href="../css/signupcss.css">
     <link rel="stylesheet" href="../css/nisal.css">
 
-<script>
-function validateForm() {
-  let x = document.forms["form"]["name"].value;
-  let y = document.forms["form"]["email"].value;
-  let z = document.forms["form"]["pwd"].value;
+    <script src="../js/signin.js" async></script>
 
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-
-  if (y == "") {
-    alert("Email must be filled out");
-    return false;
-  }
-
-  if (z == "") {
-    alert("Password must be filled out");
-    return false;
-  }
-}
-
-
-</script>
 
 </head>
 
@@ -68,7 +46,7 @@ function validateForm() {
             </div>
             <br>
             <div class="main">
-                <form id="form" class="form white-text" action="results.html" onsubmit="return validateForm()" onclick="" method="GET">
+                <form id="form" class="form white-text" method="GET">
                     <br>
                     <br>
 
@@ -76,7 +54,7 @@ function validateForm() {
                     <label for="title">Got a Question?</label>
                     <br>
                     <br>
-                    <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here" disabled>
+                    <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here">
                     <br>
                     <br>
                     <br>
@@ -199,7 +177,7 @@ function validateForm() {
                     <label for="verify" class="verify white-text">I agree to receive email updates from Alola.</label>
                     
                     <div class="buttons">
-                    <div><button type="submit" class="fill-btn">Send</button></div>
+                    <div><button class="fill-btn" onclick="getContent()" id="submit-form">Send</button></div>
                     <br>
                     <br>
                     <div><button type="reset" class="fill-btn">Edit</button></div>
@@ -209,12 +187,19 @@ function validateForm() {
                 </form>
             <div>
         </div>
+        <div id="details-taken">
+            <div id="name-val"></div>
+            <div id="email-val"></div>
+            <div id="title-val"></div>
+            <div id="message-val"></div>
+        </div>
     </section>
     <section id="page-editor-sec">
         <a href="editors/editor-pasath.html">View Page Editor</a>
     </section>
-    <script src="../js/shop.js"></script>
-    <script src="../js/main.js"></script>
+
+    
+
 
 </body>
 </html>
