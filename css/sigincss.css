@@ -220,3 +220,11 @@ justify-content: center;
 color: #f2f1f1;
 }
 
+/* pasa editior page */
+.image-center{
+    text-align: center;
+}
+
+.listo{
+    list-style-type: square;
+}
