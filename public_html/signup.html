@@ -10,28 +10,8 @@
     <link rel="stylesheet" href="../css/signupcss.css">
     <link rel="stylesheet" href="../css/nisal.css">
 
-<script>
-function validateForm() {
-  let x = document.forms["form"]["name"].value;
-  let y = document.forms["form"]["email"].value;
-  let z = document.forms["form"]["pwd"].value;
+    <script src="../js/signin.js" async></script>
 
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-
-  if (y == "") {
-    alert("Email must be filled out");
-    return false;
-  }
-
-  if (z == "") {
-    alert("Password must be filled out");
-    return false;
-  }
-}
-</script>
 
 </head>
 
@@ -197,7 +177,7 @@ function validateForm() {
                     <label for="verify" class="verify white-text">I agree to receive email updates from Alola.</label>
                     
                     <div class="buttons">
-                    <div><button type="submit" class="fill-btn">Send</button></div>
+                    <div><button class="fill-btn" onclick="getContent()" id="submit-form">Send</button></div>
                     <br>
                     <br>
                     <div><button type="reset" class="fill-btn">Edit</button></div>
@@ -206,14 +186,11 @@ function validateForm() {
                     
                 </form>
             <div>
-        </div>
-        <hr>  
+        </div> 
     </section>
     <section id="page-editor-sec">
         <a href="editors/editor-pasath.html">View Page Editor</a>
     </section>
-    <script src="../js/shop.js"></script>
-    <script src="../js/main.js"></script>
 
 </body>
 </html>
