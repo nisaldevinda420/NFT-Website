@@ -739,3 +739,12 @@ nav{
   #myBtn:hover {
     background-color: #555;
   }
+
+  .image-center1{
+    text-align: center;
+  }
+
+
+.list-edit1{
+  list-style-type: square;
+  }
