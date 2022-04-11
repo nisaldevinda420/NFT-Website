@@ -45,161 +45,158 @@
                     <b>Sign in</b></a></p>
             </div>
             <br>
+            
             <div class="main">
-                <form id="form" class="form white-text" method="GET">
-                    <br>
-                    <br>
+                <form id="form" class="form white-text" action="results.html" onsubmit="return validateForm()" method="get">
+                        <br>
+                        <br>
 
-                    <div class="test">
-                    <label for="title">Got a Question?</label>
-                    <br>
-                    <br>
-                    <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here">
-                    <br>
-                    <br>
-                    <br>
-                    
-                    </div>
+                        <div class="test">
+                        <label for="title">Got a Question?</label>
+                        <br>
+                        <br>
+                        <input type="text" name="Question Title " id="title" class="pwd f-input" placeholder="Your Question title here">
+                        <br>
+                        <br>
+                        <br>
+                        
+                        </div>
 
-                    <div class="test">
-                    <label for="questiondeets">Type your Question Here</label>
-                    <br>
-                    <br>
-                    <textarea name="Question Details" id="questiondeets" class="pwd" placeholder="Your Question Indepth Here">
-                    </textarea>
-                    <br>
-                    <br>
-                    <br>
-                    
-                    <div class="desc">
-                    <h3>"<span class="purple-text">A highly-curated platform for creating,</span> collecting and trading unique NFTs"</h3>
-                    <br>
-                    <dt class="purple-text"><b>Drops</b></dt>
-                    <dd>Purchase NFTs that are directly sold by top Creators</dd>
-                    <br>
-                    <dt class="purple-text"><b>Marketplace</b></dt>
-                    <dd>Bid on and auction off rare digital collectibles</dd>
-                    <br>
-                    <dt class="purple-text"><b>Quizes</b></dt>
-                    <dd>Play a quiz to earn a chance to win your own NFT</dd>
-                    <br>
-                    <dt class="purple-text"><b>My Nfts</b></dt>
-                    <dd>A digital gallery to showcase your collection</dd>
-                    </div>
-                    </div>
-        
-                    <div>
-                    <label for="name"> Name <small><i>(Only Visible to You)</i></small></label>
-                    <br>
-                    <br>
-                    <input type="text" id="name" name="Name" class="fname f-input" placeholder="Your Name here">
-                    <br>
-                    </div>
-            
-                    <div>
-                    <br>
-                    <label for="email">Email</label>
-                    <br>
-                    <br>
-                    <input type="email" name="Email " id="email" class="email f-input" placeholder="example@hotmail.com">
-                    <br>
-                    <br>
-                    </div>
-            
-                    <div>
-                    <label for="fname">Username <small><i>(Only Visible to You)</i></small></label>
-                    <br>
-                    <br>
-                    <input type="text" name="Username " id="fname" class="fname f-input" placeholder="John Doe">
-                    <br>
-                    <br>
-                    </div>
-            
-                    <div>
-                    <label for="date">Birthdate</label>
-                    <br>
-                    <br>
-                    <input type="date" name="Date of Birth " id="date" class="f-input">
-                    <br>
-                    <br>
-                    </div>
-                    
-                    <div>
-                    <label for="pwd">Password</label>
-                    <br>
-                    <br>
-                    <input type="password" name="Password " id="pwd" class="pwd f-input" placeholder="*******">
-                    <br>
-                    <br>
-                    </div>
-            
-                    <div>
-                    <label for="pwd1">Confirm Password</label>
-                    <br>
-                    <br>
-                    <input type="password" name="Password Confirmed " id="pwd1" class="pwd f-input" placeholder="*******">
-                    <br>
-                    <br>
-                    </div>
+                        <div class="test">
+                            <label for="questiondeets">Type your Question Here</label>
+                            <br>
+                            <br>
+                            <textarea name="Question Details" id="questiondeets" class="pwd" placeholder="Your Question Indepth Here">
+                            </textarea>
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <div class="desc">
+                                <h3>"<span class="purple-text">A highly-curated platform for creating,</span> collecting and trading unique NFTs"</h3>
+                                <br>
+                                <dl>
+    
+                                    <dt class="purple-text"><b>Drops</b></dt>
+                                        <dd>Purchase NFTs that are directly sold by top Creators</dd>
+       
+                                    <dt class="purple-text"><b>Marketplace</b></dt>
+                                        <dd>Bid on and auction off rare digital collectibles</dd>
 
-                    <div> 
-                    <p>Your Wallet Type</p>
-                    <input type="radio" id="metamask" name="walletname" value="MetaMask">
-                    <label for="metamask">MetaMask</label><br>
-                    <br>
+                                    <dt class="purple-text"><b>Quizes</b></dt>
+                                        <dd>Play a quiz to earn a chance to win your own NFT</dd>
+
+                                    <dt class="purple-text"><b>My Nfts</b></dt>
+                                        <dd>A digital gallery to showcase your collection</dd>
+                                
+                                </dl>
+                            </div>
+
+                        </div>
+            
+                        <div>
+                            <label for="name"> Name <small><i>(Only Visible to You)</i></small></label>
+                            <br>
+                            <br>
+                            <input type="text" id="name" name="Name" class="fname f-input" placeholder="Your Name here">
+                            <br>
+                        </div>
                 
-                    <input type="radio" id="cb" name="walletname" value="CoinBase Wallet">
-                    <label for="cb">CoinBase Wallet</label><br>
-                    <br>
-                    
-                    <input type="radio" id="wc" name="walletname" value="Wallet Connect">
-                    <label for="wc">Wallet Connect</label>
+                        <div>
+                            <br>
+                            <label for="email">Email</label>
+                            <br>
+                            <br>
+                            <input type="email" name="Email " id="email" class="email f-input" placeholder="example@hotmail.com">
+                            <br>
+                            <br>
+                        </div>
+                
+                        <div>
+                            <label for="fname">Username <small><i>(Only Visible to You)</i></small></label>
+                            <br>
+                            <br>
+                            <input type="text" name="Username " id="fname" class="fname f-input" placeholder="John Doe">
+                            <br>
+                            <br>
+                        </div>
+                
+                        <div>
+                            <label for="date">Birthdate</label>
+                            <br>
+                            <br>
+                            <input type="date" name="Date of Birth " id="date" class="f-input">
+                            <br>
+                            <br>
+                        </div>
+                        
+                        <div>
+                            <label for="pwd">Password</label>
+                            <br>
+                            <br>
+                            <input type="password" name="Password " id="pwd" class="pwd f-input" placeholder="*******">
+                            <br>
+                            <br>
+                        </div>
+                
+                        <div>
+                            <label for="pwd1">Confirm Password</label>
+                            <br>
+                            <br>
+                            <input type="password" name="Password Confirmed " id="pwd1" class="pwd f-input" placeholder="*******">
+                            <br>
+                            <br>
+                        </div>
 
-                    <br>
-                    <br>
-                    </div>
+                        <div> 
+                            <p>Your Wallet Type</p>
+                            <input type="radio" id="metamask" name="walletname" value="MetaMask">
+                            <label for="metamask">MetaMask</label><br>
+                            <br>
+                        
+                            <input type="radio" id="cb" name="walletname" value="CoinBase Wallet">
+                            <label for="cb">CoinBase Wallet</label><br>
+                            <br>
+                            
+                            <input type="radio" id="wc" name="walletname" value="Wallet Connect">
+                            <label for="wc">Wallet Connect</label>
 
-                    <div>
-                    <label for="wallet">Wallet Key</label>
-                    <br>
-                    <br>
-                    <textarea name="Wallet Key " id="wallet" class="pwd" placeholder="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141">
-                    </textarea>
-                    <br>
-                    <br>
-                    </div>
-   
-                    <input type="radio" name="verify Main" id="verify" class="verify black-text">
-                    <label for="verify" class="verify white-text">By clicking Send, I hereby acknowledge that I agree to the Alola.com NFT Terms and Conditions and I've read the Privacy Notice.</label>
-                    <br>
-                    <br>
-                    <input type="radio" name="verify Secondary" id="verify1" class="verify black-text">
-                    <label for="verify" class="verify white-text">I agree to receive email updates from Alola.</label>
-                    
-                    <div class="buttons">
-                    <div><button class="fill-btn" onclick="getContent()" id="submit-form">Send</button></div>
-                    <br>
-                    <br>
-                    <div><button type="reset" class="fill-btn">Edit</button></div>
+                            <br>
+                            <br>
+                        </div>
 
-                    </div>
-                    
+                        <div>
+                            <label for="wallet">Wallet Key</label>
+                            <br>
+                            <br>
+                            <textarea name="Wallet Key " id="wallet" class="pwd" placeholder="FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141">
+                            </textarea>
+                            <br>
+                            <br>
+                        </div>
+    
+                        <input type="radio" name="verify Main" id="verify" class="verify black-text">
+                        <label for="verify" class="verify white-text">By clicking Send, I hereby acknowledge that I agree to the Alola.com NFT Terms and Conditions and I've read the Privacy Notice.</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="verify Secondary" id="verify1" class="verify black-text">
+                        <label for="verify" class="verify white-text">I agree to receive email updates from Alola.</label>
+                        
+                        <div class="buttons">
+                            <div><button class="fill-btn" onclick="getContent()" id="submit-form">Send</button></div>
+                            <br>
+                            <br>
+                            <div><button type="reset" class="fill-btn">Edit</button></div>
+                        </div>
                 </form>
             <div>
         </div>
-        <div id="details-taken">
-            <div id="name-val"></div>
-            <div id="email-val"></div>
-            <div id="title-val"></div>
-            <div id="message-val"></div>
+        </div>
         </div>
     </section>
-    <section id="page-editor-sec">
-        <a href="editors/editor-pasath.html">View Page Editor</a>
-    </section>
-
     
-
+    <section id="page-editor-sec"><h5><a href="editors/editor-pasath.html">View Page Editor</a></h5> 
+    </section>
 
 </body>
 </html>
