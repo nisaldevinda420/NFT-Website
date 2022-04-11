@@ -1,25 +1,8 @@
-
-
-// function updateCartTotal(){
-//     var cartItemContainer = document.getElementsByClassName('checkout-wrapper')[0]
-//     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-//     for (var i = 0; i < cartRows.length; i++) {
-//         var cartRow = cartRows[i]
-//         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-//         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-//         var quantity = quantityElement.value
-//         console.log(quantity)
-//     }
-// }
-
-
 (function(){
     const addButton = document.querySelectorAll('.atc-btn');
 
     addButton.forEach(function(btn){
         btn.addEventListener('click',function(event){
-            // btn.textContent = "Added !";
-            // btn.disabled = true;
             let fullPath = event.target.parentElement.previousElementSibling.previousElementSibling.firstElementChild.src;
             let pos = fullPath.indexOf('images') + 6;
             
@@ -104,8 +87,6 @@ function checkout(){
 
     const invoiceObject = document.getElementById('invoice-content');
     invoiceObject.innerHTML = cartContents;
-
-    // getDetails();
     
     var invoiceDetails = document.getElementById('invoice')
     var visibility = invoiceDetails.style.visibility;

@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alola | Welcome!</title>
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/presentation.css">
     <link rel="stylesheet" href="../css/nisal.css">
 
+    <script src="../js/presentation.js" async></script>
+
 </head>
+
 <body>
     <section class="fullscreen-center black-bg">
         <div id="welcome-section">
-            <center>
+            <div>
                 <img src="../assets/images/nav-logo.png" alt="">
-                <p>Alola is an NFT (Non-Fungible Token) based web project created by a team of four undergraduates for educational purposes.</p>
+                <p>Alola is an NFT (Non-Fungible Token) based web project created by a team of four undergraduates for
+                    educational purposes.</p>
                 <h1 id="welcome-msg">WELCOME!</h1>
                 <hr>
                 <h2>OUR TEAM</h2>
@@ -23,31 +28,18 @@
                 <p>Pasath Bandara</p>
                 <p>Sachith Wickramasekara</p>
                 <p>Rajani Sooriyaarachchi</p>
-            </center>
+            </div>
         </div>
-        
-        
-            
+        <div id="loader">
+            <p class="redirect-text">Redirecting to main page</p>
+            <div id="loader-wrap">
+                <div class="lds-dual-ring"></div>
+            </div>
         </div>
     </section>
     <section id="page-editor-sec" class="presentation-editor">
         <a href="editors/editor-nisal.html">View Page Editor</a>
     </section>
-    <div id="loader">
-        <p class="redirect-text">Redirecting to main page</p>
-        <div id="loader-wrap">
-            <div class="lds-dual-ring"></div>
-        </div>
-    </div>
-    <script src="../js/shop.js"></script>
-    <script src="../js/main.js"></script>
-
-    
-    <!-- JavaScript code to redirect to homepage-->
-    <script>
-        setTimeout(function(){
-        window.location.href = "index.html";
-        }, 4000);
-    </script>
 </body>
+
 </html>
